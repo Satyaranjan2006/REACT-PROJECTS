@@ -35,8 +35,7 @@ Array Mapping
 Dynamic UI Updates
 React Hooks (useState)
 ⚙️ Installation
-# Clone the repository
-git clone https://github.com/your-username/accordion-app.git
+
 
 # Navigate to project folder
 cd accordion-app
