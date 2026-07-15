@@ -25,19 +25,35 @@ export default function StarRating({noOfStars = 5}) {
     return (
         <div className="star-rating">
             {
-                [...Array(noOfStars)].map((_, index) => {
-                    index += 1
+                // [...Array(noOfStars)].map((_, index) => {
+                //     index += 1
+                //     return (
+                //         <FaStar
+                //             // why this key
+                //             key={index}
+                //             className={index<=(hover||rating) ? 'active':'inactive'}
+                //             onClick={() => handelClick(index)}
+                //             onMouseMove={() => mouseEnter(index)}
+                //             onMouseLeave={() => mouseMove(index)}
+                //             size={40}
+                //         />
+                //     );
+                // })
+
+                //first arrsy of destructing
+                [...Array(noOfStars)].map((_,index)=>{
+                    index+=1
                     return (
                         <FaStar
-                            // why this key
-                            key={index}
-                            className={index<=(hover||rating) ? 'active':'inactive'}
-                            onClick={() => handelClick(index)}
-                            onMouseMove={() => mouseEnter(index)}
-                            onMouseLeave={() => mouseMove(index)}
-                            size={40}
+                        key={index}
+                        className={index<=(hover||rating)?'active':'inactive'}
+                        onClick={()=>handelClick(index)}
+                        onMouseMove={()=>mouseEnter(index)}
+                        onMouseLeave={()=>mouseMove(index)}
+                        size={40}
                         />
-                    );
+                    )
+
                 })
             }
 
