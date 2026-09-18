@@ -19,5 +19,12 @@ export default function LightDarkMode(){
                 <button onClick={handleToggleTheme}>Cange Theme</button>
             </div>
         </div>
+
+        // <div className="light-dark-mode" data-theme={theme}>
+        //     <div className="container">
+        //         <p>Hello World</p>
+        //         <button onClick={handleToggleTheme}>Cange Theme</button>
+        //     </div>
+        // </div>
     )
 }
